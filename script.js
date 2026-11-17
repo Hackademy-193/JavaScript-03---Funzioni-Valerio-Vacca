@@ -92,8 +92,58 @@
 // voglio astrarre ulteriormente questa sintassi. voglio farla con il return implicito
 // quando si sfrutta il return implicito, si usa la sintassi con arrow function, ma vanno tolte anche le graffe
 
-let somma = (numero1, numero2)=> numero1 + numero2;
+// let somma = (numero1, numero2)=> numero1 + numero2;
 
 
-let sum1 = somma(10,20);
-console.log(sum1);
+// let sum1 = somma(10,20);
+// console.log(sum1);
+
+// OPERATORE TERNARIO -> è un operatore che si usa nelle condizioni, perché altro non è che un if/else contratto.
+// l'operatore ternario, essendo un if/else contratto, può essere usato solo in questo modo. Non esiste un if/else if/else contratto.
+
+
+// let h  = 16;
+// let dayTime = 12;
+
+// if(h > dayTime){
+//     console.log('afternoon');
+// }else{
+//     console.log('morning');
+// }
+
+// trasformiamo questa condizione in un operatore ternario
+
+// let dayTime = (h > 12) ? 'afternoon' : 'morning';
+// console.log(dayTime);
+
+// stravolgiamo l'esercizio di pari/dispari con l'arrow function
+
+// function pariDispari(numero){
+
+//     if(numero % 2 == 0){
+//         return 'Il numero è pari';
+//     }else{
+//         return 'Il numero é dispari';
+//     }
+
+// }
+
+// let pariDispari = (numero)=>{
+//     return (numero % 2 == 0) ? 'Il numero è pari' : 'Il numero é dispari';
+// }
+
+// let numero1 = pariDispari(999);
+// let numero2 = pariDispari(20);
+
+// console.log(numero1);
+// console.log(numero2);
+
+// sintassi con return implicito
+
+let pariDispari = (numero)=> (numero % 2 == 0) ? 'Il numero è pari' : 'Il numero é dispari';
+
+let numero1 = pariDispari(999);
+let numero2 = pariDispari(20);
+
+console.log(numero1);
+console.log(numero2);
